@@ -17,7 +17,9 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 cd package/lean
+# 使用最新版本的主题
 rm -rf luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 
+#添加ServerChan
 git clone https://github.com/tty228/luci-app-serverchan
